@@ -1,0 +1,61 @@
+*{box-sizing:border-box}html,body{padding:0;margin:0}
+body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;background:#f8fafc;color:#0f172a}
+a{color:inherit;text-decoration:none}
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+
+/* Header (Light) */
+.nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0;background:#ffffff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-index:50}
+.brand{display:flex;gap:10px;align-items:center}
+.brand img{height:32px}
+.nav a{color:#334155;margin-left:18px}
+.cta-btn{background:#22c55e;border:none;color:#06220f;font-weight:800;padding:10px 16px;border-radius:10px;cursor:pointer}
+.cta-btn:hover{background:#16a34a}
+
+/* Hero */
+.hero{padding:60px 0 40px}
+.h-title{font-weight:900;font-size:42px;line-height:1.1;color:#0f172a;margin:0 0 12px}
+.h-sub{color:#475569;max-width:700px}
+.hero .actions{margin-top:22px;display:flex;gap:12px;flex-wrap:wrap}
+.primary{background:#2563eb;border:none;color:#fff;padding:12px 18px;border-radius:12px;font-weight:800;cursor:pointer}
+.primary:hover{background:#1e40af}
+.secondary{background:#ffffff;border:1px solid #cbd5e1;color:#334155;padding:12px 18px;border-radius:12px;font-weight:700;cursor:pointer}
+.secondary:hover{border-color:#94a3b8}
+
+/* Features */
+.section{padding:44px 0}
+.grid{display:grid;gap:16px}
+@media(min-width:900px){.grid{grid-template-columns:repeat(4,1fr)}}
+.card{background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;padding:16px;box-shadow:0 10px 20px rgba(17,24,39,.06)}
+.card h4{margin:4px 0 8px;color:#0f172a}
+.card p{margin:0;color:#475569}
+
+/* Pricing */
+.pricing{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:900px){.pricing{grid-template-columns:repeat(3,1fr)}}
+.pricecard{background:#ffffff;border:1px solid #e5e7eb;border-radius:18px;padding:20px;text-align:center;box-shadow:0 10px 20px rgba(17,24,39,.06)}
+.price{font-size:40px;font-weight:900;color:#0f172a}
+.muted{color:#64748b}
+
+/* Footer */
+footer{padding:28px 0;border-top:1px solid #e5e7eb;margin-top:40px;color:#475569;background:#ffffff}
+
+/* Chat widget (Light) */
+.chat-fab{position:fixed;right:20px;bottom:20px;background:#2563eb;border:none;color:#fff;border-radius:999px;width:60px;height:60px;font-size:22px;box-shadow:0 12px 30px rgba(37,99,235,.35);cursor:pointer}
+.widget{position:fixed;right:20px;bottom:90px;width:340px;max-width:95vw;background:#ffffff;border:1px solid #e5e7eb;border-radius:16px;overflow:hidden;display:none;flex-direction:column;box-shadow:0 18px 40px rgba(2,6,23,.15)}
+.widget.open{display:flex}
+.w-header{padding:12px 14px;background:#f8fafc;border-bottom:1px solid #e5e7eb;display:flex;justify-content:space-between;align-items:center}
+.w-title{font-weight:800;color:#0f172a}
+.w-body{height:300px;overflow:auto;padding:12px;background:#f8fafc}
+.msg{margin:8px 0;padding:10px 14px;border-radius:12px;display:inline-block;max-width:92%}
+.user{background:#dbeafe;color:#1e3a8a;align-self:flex-end}
+.bot{background:#f1f5f9;color:#0f172a;border:1px solid #e5e7eb}
+.w-input{display:flex;gap:8px;padding:10px;border-top:1px solid #e5e7eb;background:#ffffff}
+.w-text{flex:1;background:#ffffff;color:#0f172a;border:1px solid #e5e7eb;border-radius:10px;padding:10px}
+.w-send{background:#22c55e;border:none;color:#06220f;font-weight:800;padding:10px 14px;border-radius:10px;cursor:pointer}
+.w-send:hover{background:#16a34a}
+.badge{display:inline-block;background:#e2e8f0;color:#0f172a;padding:6px 10px;border-radius:999px;font-weight:700;font-size:12px}
+.link-row{display:flex;gap:18px;flex-wrap:wrap;margin-top:10px}
+
+/* Simple content pages */
+.page h1{font-size:32px;margin:16px 0;color:#0f172a}
+.page p{color:#334155;max-width:800px}
