@@ -13,8 +13,8 @@ export default async function handler(req, res) {
     });
     const story = response.output[0].content[0].text;
     res.status(200).json({ story });
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ error: "Failed to generate story" });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: "OpenAI request failed" });
   }
 }
